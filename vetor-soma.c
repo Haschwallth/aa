@@ -6,16 +6,17 @@ int vtr[10];
 int i = 0;
 int soma = 0;
 
-for (int i=0; i<10; i++) {
+for (int i=0; i<11; i++) {
 
 printf ("\nEscreva um numero inteiro: ");
-scanf ("%d", &vtr);
+scanf ("%d", &vtr[i]);
 
-soma+=vtr;
+soma+=vtr[1];
 }
-soma+=vtr;
 
-printf ("O resultado e igual a %d", soma);
+printf ("\nO resultado e igual a %d" ,soma);
+
+return 0;
 
 
 }
