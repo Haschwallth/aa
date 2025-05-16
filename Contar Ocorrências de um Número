@@ -1,0 +1,30 @@
+#include <stdio.h>
+//5) Contar Ocorrências de um Número
+//Leia um vetor de 15 números e um valor x. Conte quantas vezes x aparece no vetor e informe ao usuário.
+int main () {
+
+    int vtr [15];
+    int i = 0;
+    int x;
+    int contador = 0;
+
+    for (i = 0; i < 15; i++) {
+        printf("\nEscreva um numero: ");
+        scanf("%d", &vtr[i]);
+    }
+    
+    printf("\nQual numero voce gostaria de saber quantas vezes aparece? ");
+    scanf("%d", &x);
+    
+     for (i = 0; i < 15; i++) {
+        if(vtr[i] == x) {
+            contador++;
+        }
+    }
+    
+     printf("\nO numero %d aparece %d vezes!", x, contador);
+        
+    return 0;
+
+
+}
